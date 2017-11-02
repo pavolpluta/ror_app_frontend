@@ -1,0 +1,66 @@
+
+body {
+    font-family: 'Slabo 27px', serif;
+    font-size: large;
+}
+
+
+.indexJumbotron {
+    background-color: #277d83;
+}
+
+.roomsJumbotron {
+    background-color: #277d83;
+    height: 20px;
+}
+
+.roomsJumbotron h2 {
+    margin-top: -15px;
+}
+
+.buildings > a{
+    border: none;
+    border-bottom: solid 2px darkgray;
+    -webkit-transition: color 0.2s ease;
+    -moz-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+    -ms-transition: color 0.2s ease;
+    transition: background-color 0.2s ease;
+}
+
+.buildings > a:last-child{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: solid 1px darkgray; /* zahadna situacia, ale ked to takto nespravim, last child bude mat hrubsie pociarknutie... */
+}
+
+.buildings > a:hover{
+    background-color: #277d83;
+    color: #0f0f0f;
+}
+
+.buildings > a:focus{
+    background-color: transparent;
+}
+
+.buildings > a:focus:hover{
+    background-color: #277d83;
+}
+
+.rooms > a{
+    padding: 50px 0 50px 0;
+    font-size: 26px;
+}
+
+.back {
+    color: #0f0f0f;
+}
+
+@media (max-width: 480px){
+    .roomsJumbotron h2{
+        font-size: 24px;
+
+    }
+}
+
+pull-left col-xs-offset-1 col-sm-offset-1 col-md-offset-0
