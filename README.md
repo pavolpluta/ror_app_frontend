@@ -2,5 +2,5 @@
 
 Here I will create Ruby on Rails Web app (one day)
 
-## Progress:
+# Progress:
   - Working on front-end development (HTML,CSS,JS)
