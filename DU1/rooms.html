@@ -6,29 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zoznam miestností</title>
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 </head>
 <body>
 
-<div class="jumbotron roomsJumbotron">
+<div class="jumbotron rooms_jumbo">
     <div class="container">
-         <h2 class="col-xs-1 col-sm-0"><a href="index.html" class="back"> <span class="glyphicon glyphicon-arrow-left"></span></a></h2>
-        <h2 class="text-center"> Zoznam miestností budovy</h2>
+        <h2 class="col-xs-1 col-sm-0"><a href="index.html" class="back"> <span
+                class="glyphicon glyphicon-fast-backward"></span></a></h2>
+        <h2 class="text-center">Miestnosti</h2>
     </div>
 </div>
+
 
 <div class="container">
-    <div class="list-group text-center rooms">
-        <a href="#" target="_blank" class="list-group-item">Miestnosť 1</a>
-        <a href="#" target="_blank" class="list-group-item">Miestnosť 2</a>
-        <a href="#" target="_blank" class="list-group-item">Miestnosť 3</a>
-        <a href="#" target="_blank" class="list-group-item">Miestnosť 4</a>
-        <a href="#" target="_blank" class="list-group-item">Miestnosť 5</a>
-        <a href="#" target="_blank" class="list-group-item">Miestnosť 6</a>
+    <div class="col-sm-offset-2 col-sm-8">
+        <input class="form-control" id="searchBuilding" type="text" placeholder="Vyhľadaj miestnosť...">
     </div>
-
 </div>
+
+
+<div class="container-fluid">
+    <ul class="list-group text-center rooms">
+        <a href="schedule.html">
+            <li class="list-group-item col-md-4 col-sm-6 room">auto</li>
+        </a>
+        <a href="schedule.html">
+            <li class="list-group-item col-md-4 col-sm-6 room">auto</li>
+        </a>
+        <a href="schedule.html">
+            <li class="list-group-item col-md-4 col-sm-6 room">autobus</li>
+        </a>
+        <a href="schedule.html">
+            <li class="list-group-item col-md-4 col-sm-6 room">vlak</li>
+        </a>
+        <a href="schedule.html">
+            <li class="list-group-item col-md-4 col-sm-6 room">vlak</li>
+        </a>
+
+    </ul>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

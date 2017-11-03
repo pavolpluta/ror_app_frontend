@@ -1,24 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
 body {
     font-family: 'Slabo 27px', serif;
     font-size: large;
 }
 
-
+/* index.html */
 .indexJumbotron {
     background-color: #277d83;
 }
 
-.roomsJumbotron {
+.rooms_jumbo {
     background-color: #277d83;
     height: 20px;
 }
 
-.roomsJumbotron h2 {
+.rooms_jumbo h2 {
     margin-top: -15px;
 }
 
-.buildings > a{
+.buildings  a{
     border: none;
     border-bottom: solid 2px darkgray;
     -webkit-transition: color 0.2s ease;
@@ -26,41 +28,152 @@ body {
     -o-transition: color 0.2s ease;
     -ms-transition: color 0.2s ease;
     transition: background-color 0.2s ease;
+    padding:30px
+
 }
 
-.buildings > a:last-child{
+.buildings{
+    max-height: 400px;
+    overflow-y: scroll;
+    border: 1px solid lightgray;
+
+}
+
+@media (min-width: 768px){
+    .buildings{
+        max-height: 500px;
+        overflow-y: scroll;
+        border: 1px solid lightgray;
+
+    }
+
+    .buildings  a{
+        padding: 40px;
+    }
+}
+
+
+.buildings a {
+    border-top: solid 1px lightgray; /* divna situacia - obcas mi vynechava pri zmene rozlisenia ohranicenie, tak ho davam radsej z oboch stran */
+    border-bottom: solid 1px lightgray;
+}
+.buildings a:last-child{
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    border-bottom: solid 1px darkgray; /* zahadna situacia, ale ked to takto nespravim, last child bude mat hrubsie pociarknutie... */
+    border-bottom: none;
 }
 
-.buildings > a:hover{
+.buildings a:hover{
     background-color: #277d83;
     color: #0f0f0f;
+
 }
 
-.buildings > a:focus{
+
+.buildings  a:focus{
     background-color: transparent;
 }
 
-.buildings > a:focus:hover{
+.buildings  a:focus:hover{
     background-color: #277d83;
 }
 
-.rooms > a{
-    padding: 50px 0 50px 0;
-    font-size: 26px;
+#searchBuilding{
+    height: 50px;
+    margin-bottom: 20px;
 }
+
+.around_button {
+    position: relative;
+}
+
+.button_today{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    z-index: 1;
+}
+
+
+
+@media (max-width: 768px){
+    .button_today button{
+        font-size: 10px;
+    }
+}
+
+/* rooms.html */
+
 
 .back {
     color: #0f0f0f;
 }
 
-@media (max-width: 480px){
-    .roomsJumbotron h2{
-        font-size: 24px;
+@media (max-width: 768px){
 
+    .rooms{
+        max-height: 500px;
+        overflow-y: scroll;
+        border: 1px solid lightgray;
     }
 }
 
-pull-left col-xs-offset-1 col-sm-offset-1 col-md-offset-0
+.room {
+    padding: 80px;
+    color: #363636;
+    -webkit-transition: color 0.2s ease;
+    -moz-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+    -ms-transition: color 0.2s ease;
+    transition: background-color 0.2s ease;
+    font-size: larger;
+}
+
+.room:hover {
+    background-color: #277d83;
+    color: #0f0f0f;
+
+}
+
+/* schedule.html */
+
+
+
+
+
+ #schedule_table td{
+     height: 90px;
+     text-align: center;
+    vertical-align: middle;
+ }
+
+
+/* today.html */
+
+#day_table td:not(:last-child) {
+    border-right: solid 1px lightgray;
+}
+
+
+
+#day_table tbody tr:hover {
+    background-color: #e5ece9;
+}
+
+
+#day_table td{
+    height: 60px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#day_table th{
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    #table-responsive{
+        max-height: 500px;
+        overflow-y: scroll;
+    }
+}
