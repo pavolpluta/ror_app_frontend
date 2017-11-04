@@ -7,17 +7,31 @@ body {
 }
 
 /* index.html */
+.navigation {
+    margin-bottom: -15px;
+    background-color: #3c3c3c;
+    border-bottom:none;
+
+}
+
+.icon-bar{
+    background-color: white !important;
+}
+
+.navigation .navbar-nav li a {
+    color: white;
+}
+
+.navigation .navbar-nav li a:hover {
+    color: #99a29f;
+}
+
+.navigation .active > a {
+
+}
+
 .indexJumbotron {
     background-color: #277d83;
-}
-
-.rooms_jumbo {
-    background-color: #277d83;
-    height: 20px;
-}
-
-.rooms_jumbo h2 {
-    margin-top: -15px;
 }
 
 .buildings  a{
@@ -54,7 +68,7 @@ body {
 
 
 .buildings a {
-    border-top: solid 1px lightgray; /* divna situacia - obcas mi vynechava pri zmene rozlisenia ohranicenie, tak ho davam radsej z oboch stran */
+    border-top: solid 1px lightgray;
     border-bottom: solid 1px lightgray;
 }
 .buildings a:last-child{
@@ -83,27 +97,41 @@ body {
     margin-bottom: 20px;
 }
 
-.around_button {
+.around_link_div {
     position: relative;
 }
 
-.button_today{
+.button_today_div{
     position: absolute;
     right: 0;
     top: 5px;
     z-index: 1;
 }
 
+.button_today_div button{
+    background-color: #2b542c;
+}
 
+.button_today_div button:hover{
+    background-color: #325e75;
+}
 
 @media (max-width: 768px){
-    .button_today button{
+    .button_today_div button{
         font-size: 10px;
     }
 }
 
 /* rooms.html */
 
+.jumbotron_others {
+    background-color: #277d83;
+    height: 20px;
+}
+
+.jumbotron_others h2 {
+    margin-top: -15px;
+}
 
 .back {
     color: #0f0f0f;
@@ -129,7 +157,7 @@ body {
     font-size: larger;
 }
 
-.room:hover {
+.rooms>a:hover {
     background-color: #277d83;
     color: #0f0f0f;
 
