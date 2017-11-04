@@ -1,87 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>UCL Reservation System</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UCL Reservation System</title>
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <nav class="navbar navbar-default navigation">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div>
-		<div class="collapse navbar-collapse" id="myNavbar">
-		<ul class="nav navbar-nav">
-			<li class="active"><a href="#">Rezervácie miestností</a></li>
-			<li><a href="#">Miestnosť</a></li>
-			<li><a href="#">Rozvrh miestnosti</a></li>
-			<li><a href="#">Deň</a></li>
-		</ul>
-		</div>
-	</div>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://www.unicorncollege.cz/" target="_blank"><img class="ucl"
+                                                                                               alt="Unicorn College"
+                                                                                               src="img/ikona.ico"
+                                                                                               height="45"
+                                                                                               width="45"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Rezervácie miestností</a></li>
+                <li><a href="rooms.html">Miestnosť</a></li>
+                <li><a href="schedule.html">Rozvrh miestnosti</a></li>
+                <li><a href="today.html">Deň</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
-
-<div class="jumbotron indexJumbotron">
-	<div class="container">
-	<h1 class="text-center">Rezervácie miestností</h1>
-	</div>
-</div>
-
+<header>
+    <div class="jumbotron indexJumbotron">
+        <div class="container">
+            <h1 class="text-center">Rezervácie miestností</h1>
+        </div>
+    </div>
+</header>
 <div class="container">
-	<div class="row">
-		<div class="col-sm-offset-2 col-sm-8">
-			<input class="form-control" id="searchBuilding" type="text" placeholder="Vyhľadaj budovu...">
-		</div>
-	</div>
-		<div id="building" class="list-group text-center col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 buildings">
-			<div class="around_link_div">
-				<div class="button_today_div"><button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button></div>
-				<a href="rooms.html" class="list-group-item hoverable">Porsche</a>
-			</div>
-			<div class="around_link_div">
-				<div class="button_today_div"><button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button></div>
-				<a href="rooms.html" class="list-group-item hoverable">Audi</a>
-			</div>
-			<div class="around_link_div">
-				<div class="button_today_div"><button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button></div>
-				<a href="rooms.html" class="list-group-item hoverable">BMW</a>
-			</div>
-			<div class="around_link_div">
-				<div class="button_today_div"><button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button></div>
-				<a href="rooms.html" class="list-group-item hoverable">Traktor</a>
-			</div>
-			<div class="around_link_div">
-				<div class="button_today_div"><button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button></div>
-				<a href="rooms.html" class="list-group-item hoverable">Mercedes</a>
-			</div>
-			<div class="around_link_div">
-				<div class="button_today_div"><button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button></div>
-				<a href="rooms.html" class="list-group-item hoverable">Volvo</a>
-			</div>
-			<div class="around_link_div">
-				<div class="button_today_div"><button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button></div>
-				<a href="rooms.html" class="list-group-item hoverable">Volkswagen</a>
-			</div>
-			<div class="around_link_div">
-				<div class="button_today_div"><button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button></div>
-				<a href="rooms.html" class="list-group-item hoverable">Chevrolet</a>
-			</div>
-			<div class="around_link_div">
-				<div class="button_today_div"><button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button></div>
-				<a href="rooms.html" class="list-group-item hoverable">Opel</a>
-			</div>
-		</div>
-
+    <div class="row">
+        <div class="col-xs-offset-2 col-xs-8">
+            <input class="form-control" id="searchBuilding" type="text" placeholder="Vyhľadaj budovu...">
+        </div>
+    </div>
+    <div id="building" class="list-group text-center col-xs-8 col-xs-offset-2 buildings">
+        <div class="around_link_div">
+            <div class="button_today_div">
+                <button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button>
+            </div>
+            <a href="rooms.html" class="list-group-item hoverable">Porsche</a>
+        </div>
+        <div class="around_link_div">
+            <div class="button_today_div">
+                <button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button>
+            </div>
+            <a href="rooms.html" class="list-group-item hoverable">Audi</a>
+        </div>
+        <div class="around_link_div">
+            <div class="button_today_div">
+                <button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button>
+            </div>
+            <a href="rooms.html" class="list-group-item hoverable">BMW</a>
+        </div>
+        <div class="around_link_div">
+            <div class="button_today_div">
+                <button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button>
+            </div>
+            <a href="rooms.html" class="list-group-item hoverable">Traktor</a>
+        </div>
+        <div class="around_link_div">
+            <div class="button_today_div">
+                <button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button>
+            </div>
+            <a href="rooms.html" class="list-group-item hoverable">Mercedes</a>
+        </div>
+        <div class="around_link_div">
+            <div class="button_today_div">
+                <button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button>
+            </div>
+            <a href="rooms.html" class="list-group-item hoverable">Volvo</a>
+        </div>
+        <div class="around_link_div">
+            <div class="button_today_div">
+                <button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button>
+            </div>
+            <a href="rooms.html" class="list-group-item hoverable">Volkswagen</a>
+        </div>
+        <div class="around_link_div">
+            <div class="button_today_div">
+                <button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button>
+            </div>
+            <a href="rooms.html" class="list-group-item hoverable">Chevrolet</a>
+        </div>
+        <div class="around_link_div">
+            <div class="button_today_div">
+                <button onclick="location.href='today.html'" class="btn btn-primary btn-sm">INFO</button>
+            </div>
+            <a href="rooms.html" class="list-group-item hoverable">Opel</a>
+        </div>
+    </div>
 </div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>

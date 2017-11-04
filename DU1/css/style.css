@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
 body {
     font-family: 'Slabo 27px', serif;
@@ -14,6 +13,10 @@ body {
 
 }
 
+.ucl {
+    margin-top: -12px;
+}
+
 .icon-bar{
     background-color: white !important;
 }
@@ -26,8 +29,8 @@ body {
     color: #99a29f;
 }
 
-.navigation .active > a {
-
+.navigation .navbar-nav li a:focus {
+    color: transparent;
 }
 
 .indexJumbotron {
@@ -122,15 +125,21 @@ body {
     }
 }
 
+.breadcrumb{
+    background-color: transparent;
+    font-size: small;
+}
+
+
 /* rooms.html */
 
 .jumbotron_others {
     background-color: #277d83;
-    height: 20px;
+    height: 70px;
 }
 
 .jumbotron_others h2 {
-    margin-top: -15px;
+    margin-top: -10px;
 }
 
 .back {
