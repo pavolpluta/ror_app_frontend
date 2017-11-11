@@ -30,7 +30,7 @@ body {
 }
 
 .navigation .navbar-nav li a:focus {
-    color: transparent;
+    color: white;
 }
 
 .indexJumbotron {
