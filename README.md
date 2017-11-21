@@ -3,4 +3,4 @@
 Here I will create Ruby on Rails Web app (one day)
 
 ## Progress:
-  - Working on front-end development (HTML,CSS,JS)
+  -Front-end part done, site is fully responsive (HTML, CSS, JavaScript, Bootstrap).
